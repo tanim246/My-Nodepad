@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <style>
+        .list ul li {
+            background-color: rgba(240, 234, 234, 0.842);
+            padding: 6px 8px;
+            margin-top: 12px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-left: 4px solid rgb(10, 151, 207);
+        }
+
+        .edit {
+            background-color: rgb(0, 183, 255);
+            padding: 4px 8px;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-right: 6px;
+        }
+
+        :hover.edit {
+            background-color: rgb(37, 147, 190);
+        }
+
+        :hover.delate {
+            background-color: rgb(189, 31, 31);
+        }
+
+        .delate {
+            background-color: red;
+            padding: 4px 8px;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <section class="flex flex-col sm:ml-[440px] mt-[50px] h-[500px]">
+        <div class="flex items-center space-x-3 mb-4 w-[400px]">
+            <img src="./images/note.png" alt="Notepad-png" width="32px" />
+            <h1 class="text-[20px] font-semibold">My Notepad</h1>
+        </div>
+        <div class="space-y-2">
+            <input type="text" name="" id="noteInput" placeholder=" your note here"
+                class="border border-1 px-2 py-1 w-[400px] rounded" />
+            <div>
+                <button onclick="addNote()" class="bg-black px-5 py-1 text-white text-[14px] rounded-sm cursor-pointer">
+                    <span class="text-[20px]">+</span> Add Note
+                </button>
+            </div>
+        </div>
+        <!-- list -->
+        <div class="list">
+            <ul id="noteList">
+                <!-- li tag line -->
+            </ul>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
