@@ -3,8 +3,8 @@ const addNote = () => {
     const noteText = noteInput.value
     console.log(noteText);
     noteInput.value = ''; //  input value clear
-    if (noteText.trim() === "") {  //trim() ==> space dile kaj korbe na 
-        alert("Please enter a note.");git 
+    if (noteText.trim() === "") {  //trim() ==> space alert dibe 
+        alert("Please enter a note.");
         return;
     }
     // li tag js code
